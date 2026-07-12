@@ -2,11 +2,13 @@ import gradio as gr
 from groq import Groq
 from dotenv import load_dotenv
 import os
+import spaces
 
 load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
+@spaces.GPU
 def chat_response(message, history):
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",

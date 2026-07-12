@@ -1,8 +1,8 @@
 ---
 title: Mychatassistant
-emoji: 🐨
-colorFrom: indigo
-colorTo: pink
+emoji: 📈
+colorFrom: yellow
+colorTo: yellow
 sdk: gradio
 sdk_version: 6.20.0
 python_version: '3.12'
